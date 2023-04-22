@@ -1,0 +1,61 @@
+.landing-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+            0deg,
+            rgb(40, 27, 46) 0%,
+            rgb(15, 8, 20) 80%
+        ),
+        url(../stars.jpg);
+    background-position: center;
+    background-blend-mode: lighten;
+}
+
+.landing-guide {
+}
+
+.landing-title {
+    margin: 0;
+
+    font-family: "Jones Black", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 4rem;
+    line-height: 1;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.wave {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.wavy-letter {
+    margin: 0;
+    display: inline-block;
+    transform: translateY(5px);
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .landing-title {
+        font-size: 2rem;
+    }
+}

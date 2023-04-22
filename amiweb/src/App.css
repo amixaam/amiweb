@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Jones";
+    src: url("Fonts/Jones/Jones-Light.otf") format("opentype"),
+        url("Fonts/Jones/Jones-LightItalic.otf") format("opentype"),
+        url("Fonts/Jones/Jones-Book.otf") format("opentype"),
+        url("Fonts/Jones/Jones-BookItalic.otf") format("opentype"),
+        url("Fonts/Jones/Jones-Medium.otf") format("opentype"),
+        url("Fonts/Jones/Jones-MediumItalic.otf") format("opentype"),
+        url("Fonts/Jones/Jones-Bold.otf") format("opentype"),
+        url("Fonts/Jones/Jones-BoldItalic.otf") format("opentype"),
+        url("Fonts/Jones/Jones-Black.otf") format("opentype"),
+        url("Fonts/Jones/Jones-BlackItalic.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+:root {
+    --background: rgb(15, 8, 20);
+    --text: rgb(253, 163, 255);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+}
