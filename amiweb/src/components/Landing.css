@@ -13,12 +13,36 @@
     background-position: center;
     background-blend-mode: lighten;
 }
-
-.landing-guide {
+.landing-page:nth-child(2) {
+    background-image: linear-gradient(
+            0deg,
+            rgb(8, 8, 20),
+            rgb(29, 22, 41),
+            rgb(40, 27, 46)
+        ),
+        url(../stars.jpg);
 }
 
+.landing-guide {
+    color: var(--text);
+    position: absolute;
+    bottom: 1%;
+    /* transform: translateY(5px); */
+    /* animation: animate 7s ease-in-out infinite; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.landing-guide p {
+    margin: 0;
+}
+.icon {
+    color: rgba(246, 188, 255, 0.253);
+}
 .landing-title {
     margin: 0;
+    color: var(--text);
 
     font-family: "Jones Black", sans-serif;
     font-weight: 900;
@@ -28,11 +52,7 @@
 
     display: flex;
     flex-direction: row;
-}
-
-.wave {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    gap: 2rem;
 }
 
 .wavy-letter {
@@ -57,5 +77,6 @@
 @media screen and (max-width: 480px) {
     .landing-title {
         font-size: 2rem;
+        gap: 1rem;
     }
 }

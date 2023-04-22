@@ -1,4 +1,5 @@
 import "./Landing.css";
+import { ChevronCompactDown } from "react-bootstrap-icons";
 
 import React, { useState, useRef, useEffect, useMemo } from "react";
 
@@ -40,28 +41,33 @@ const Landing = () => {
     }, [letters]);
 
     return (
-        <div className="landing-page">
-            <h1 className="landing-title">
-                <div className="wave">
-                    {letters.split("").map((letter, index) => (
-                        <Letter
-                            key={index}
-                            delay={delays[index]}
-                            letter={letter}
-                        />
-                    ))}
+        <div>
+            <div className="landing-page">
+                <h1 className="landing-title">
+                    <div className="wave">
+                        {letters.split("").map((letter, index) => (
+                            <Letter
+                                key={index}
+                                delay={delays[index]}
+                                letter={letter}
+                            />
+                        ))}
+                    </div>
+                    <div className="wave">
+                        {letters1.split("").map((letter, index) => (
+                            <Letter
+                                key={index}
+                                delay={delays[index]}
+                                letter={letter}
+                            />
+                        ))}
+                    </div>
+                </h1>
+                <div className="landing-guide">
+                    <ChevronCompactDown className="icon" size={50} />
                 </div>
-                <div className="wave">
-                    {letters1.split("").map((letter, index) => (
-                        <Letter
-                            key={index}
-                            delay={delays[index]}
-                            letter={letter}
-                        />
-                    ))}
-                </div>
-            </h1>
-            <div className="landing-guide">|||</div>
+            </div>
+            <div className="landing-page"></div>
         </div>
     );
 };
